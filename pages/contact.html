@@ -55,7 +55,8 @@
 
         <button class="menu-toggle"
                 id="menuToggle"
-                aria-label="Open Menu">
+                aria-label="Open Menu"
+                type="button">
 
             <span></span>
             <span></span>
@@ -72,41 +73,40 @@
 
     <div class="mobile-menu" id="mobileMenu">
 
-            <a href="../index.html" class="mobile-nav-link ">
-                Home
-            </a>
+        <a href="../index.html" class="mobile-nav-link">
+            Home
+        </a>
 
-            <a href="about.html" class="mobile-nav-link ">
-                About Us
-            </a>
+        <a href="about.html" class="mobile-nav-link">
+            About Us
+        </a>
 
-            <a href="products.html" class="mobile-nav-link">
-                Products
-            </a>
+        <a href="products.html" class="mobile-nav-link">
+            Products
+        </a>
 
-            <a href="manufacturing.html" class="mobile-nav-link">
-                Manufacturing
-            </a>
+        <a href="manufacturing.html" class="mobile-nav-link">
+            Manufacturing
+        </a>
 
-            <a href="industries.html" class="mobile-nav-link">
-                Industries
-            </a>
+        <a href="industries.html" class="mobile-nav-link">
+            Industries
+        </a>
 
-            <a href="quality.html" class="mobile-nav-link">
-                Quality
-            </a>
+        <a href="quality.html" class="mobile-nav-link">
+            Quality
+        </a>
 
-            <a href="contact.html" class="mobile-nav-link active">
-                Contact
-            </a>
+        <a href="contact.html" class="mobile-nav-link active">
+            Contact
+        </a>
 
-            <a href="contact.html" class="mobile-quote-btn active">
-                Get a Quote
-            </a>
+        <a href="contact.html" class="mobile-quote-btn active">
+            Get a Quote
+        </a>
 
-        </div>
+    </div>
 
-    
 
     <!-- =====================================================
          CONTACT HERO
@@ -258,7 +258,8 @@
 
                 <a href="https://wa.me/919793976818"
                    class="whatsapp-button"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
 
                     <span>◉</span>
 
@@ -289,8 +290,34 @@
                 </div>
 
 
+                <!-- =================================================
+                     WEB3FORMS CONNECTED FORM
+                ================================================== -->
+
                 <form id="quoteForm"
-                      class="quote-form">
+                      class="quote-form"
+                      method="POST">
+
+
+                    <!-- WEB3FORMS ACCESS KEY -->
+
+                    <input type="hidden"
+                           name="access_key"
+                           value="edc680be-5f14-4cbe-a15e-6215e8a9325c">
+
+
+                    <!-- EMAIL SUBJECT -->
+
+                    <input type="hidden"
+                           name="subject"
+                           value="New Packaging Enquiry - Virat Laminator">
+
+
+                    <!-- FROM NAME -->
+
+                    <input type="hidden"
+                           name="from_name"
+                           value="Virat Laminator Website">
 
 
                     <!-- NAME -->
@@ -306,6 +333,7 @@
                             id="name"
                             name="name"
                             placeholder="Enter your name"
+                            autocomplete="name"
                             required>
 
                     </div>
@@ -323,12 +351,13 @@
                             type="text"
                             id="company"
                             name="company"
-                            placeholder="Enter company name">
+                            placeholder="Enter company name"
+                            autocomplete="organization">
 
                     </div>
 
 
-                    <!-- PHONE -->
+                    <!-- PHONE + EMAIL -->
 
                     <div class="form-row">
 
@@ -343,12 +372,11 @@
                                 id="phone"
                                 name="phone"
                                 placeholder="Enter phone number"
+                                autocomplete="tel"
                                 required>
 
                         </div>
 
-
-                        <!-- EMAIL -->
 
                         <div class="form-group">
 
@@ -361,6 +389,7 @@
                                 id="email"
                                 name="email"
                                 placeholder="Enter email"
+                                autocomplete="email"
                                 required>
 
                         </div>
@@ -376,39 +405,40 @@
                             Packaging Requirement *
                         </label>
 
-                        <select id="product"
-                                name="product"
-                                required>
+                        <select
+                            id="product"
+                            name="product"
+                            required>
 
                             <option value="">
                                 Select packaging type
                             </option>
 
-                            <option value="stand-up-pouch">
+                            <option value="Stand-Up Pouches">
                                 Stand-Up Pouches
                             </option>
 
-                            <option value="center-seal">
+                            <option value="Center-Seal Pouches">
                                 Center-Seal Pouches
                             </option>
 
-                            <option value="three-side-seal">
+                            <option value="Three-Side Seal Pouches">
                                 Three-Side Seal Pouches
                             </option>
 
-                            <option value="laminated-film">
+                            <option value="Laminated Films">
                                 Laminated Films
                             </option>
 
-                            <option value="printed-packaging">
+                            <option value="Printed Packaging">
                                 Printed Packaging
                             </option>
 
-                            <option value="custom-packaging">
+                            <option value="Custom Packaging">
                                 Custom Packaging
                             </option>
 
-                            <option value="other">
+                            <option value="Other">
                                 Other
                             </option>
 
@@ -462,10 +492,15 @@
                     </button>
 
 
+                    <!-- NOTE -->
+
                     <p class="form-note">
                         We will use your information only to respond
                         to your enquiry.
                     </p>
+
+
+                    <!-- SUCCESS / ERROR MESSAGE -->
 
                     <p id="formMessage"
                        class="form-message">
@@ -505,7 +540,7 @@
             <div class="map-wrapper">
 
                 <iframe
-                    src="https://www.google.com/maps?q=Ranchi,Jharkhand,India&output=embed"
+                    src="https://www.google.com/maps?q=23.3060754,85.1526922&output=embed"
                     loading="lazy"
                     allowfullscreen>
                 </iframe>
@@ -525,6 +560,9 @@
 
         <div class="footer-container">
 
+
+            <!-- COMPANY -->
+
             <div class="footer-column footer-company">
 
                 <a href="../index.html"
@@ -543,23 +581,41 @@
 
                 <a href="contact.html"
                    class="footer-quote">
+
                     Get a Quote →
+
                 </a>
 
             </div>
 
 
+            <!-- QUICK LINKS -->
+
             <div class="footer-column">
 
-                <h3>Quick Links</h3>
+                <h3>
+                    Quick Links
+                </h3>
 
                 <ul>
 
-                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
 
-                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
 
-                    <li><a href="products.html">Products</a></li>
+                    <li>
+                        <a href="products.html">
+                            Products
+                        </a>
+                    </li>
 
                     <li>
                         <a href="manufacturing.html">
@@ -579,14 +635,24 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
 
             </div>
 
 
+            <!-- PRODUCTS -->
+
             <div class="footer-column">
 
-                <h3>Our Products</h3>
+                <h3>
+                    Our Products
+                </h3>
 
                 <ul>
 
@@ -631,9 +697,14 @@
             </div>
 
 
+            <!-- CONTACT -->
+
             <div class="footer-column footer-contact">
 
-                <h3>Contact Us</h3>
+                <h3>
+                    Contact Us
+                </h3>
+
 
                 <div class="footer-contact-item">
 
@@ -646,6 +717,7 @@
 
                 </div>
 
+
                 <div class="footer-contact-item">
 
                     <span>☎</span>
@@ -657,6 +729,7 @@
                     </p>
 
                 </div>
+
 
                 <div class="footer-contact-item">
 
@@ -675,6 +748,8 @@
         </div>
 
 
+        <!-- FOOTER BOTTOM -->
+
         <div class="footer-bottom">
 
             <div class="footer-bottom-container">
@@ -690,7 +765,7 @@
                     </a>
 
                     <a href="#">
-                        Terms & Conditions
+                        Terms &amp; Conditions
                     </a>
 
                 </div>
@@ -701,6 +776,10 @@
 
     </footer>
 
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script src="../js/global.js"></script>
     <script src="../js/contact.js"></script>
